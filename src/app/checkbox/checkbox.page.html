@@ -1,0 +1,41 @@
+<ion-header [translucent]="true" mode="ios">
+  <ion-toolbar>
+    <ion-buttons  slot="start">
+      <ion-back-button default-href="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Checkbox</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Checkbox</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-checkbox mode="ios">I agree to the terms and conditions</ion-checkbox>
+  <ion-list>
+    <ion-item>
+      <ion-checkbox mode="ios" color="danger" label-placement="stacked" alignment="start">Aligned to the Start</ion-checkbox>
+    </ion-item>
+  
+    <ion-item>
+      <ion-checkbox mode="ios"label-placement="stacked" alignment="center">Aligned to the Center</ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-checkbox mode="ios" color="warning"justify="start">Packed at the Start of Line</ion-checkbox>
+    </ion-item>
+  
+    <ion-item>
+      <ion-checkbox mode="ios" color="success" justify="end">Packed at the End of Line</ion-checkbox>
+    </ion-item>
+  
+    <ion-item>
+      <ion-checkbox mode="ios" justify="space-between">Space Between Label and Control</ion-checkbox>
+    </ion-item>
+  </ion-list>
+  <ion-checkbox mode="ios">I agree to the <a href="#" (click)="$event.stopPropagation()">terms and conditions</a></ion-checkbox>
+</ion-content>

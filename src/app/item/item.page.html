@@ -1,0 +1,111 @@
+<ion-header [translucent]="true" mode="ios">
+  <ion-toolbar>
+    <ion-buttons  slot="start">
+      <ion-back-button default-href="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Item</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Item</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list>
+  <ion-item color="secondary">
+    <ion-avatar aria-hidden="true" slot="start">
+      <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+    <ion-label>Huey</ion-label>
+  </ion-item>
+  <ion-item color="warning">
+    <ion-avatar aria-hidden="true" slot="start">
+      <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+    <ion-label>Dewey</ion-label>
+  </ion-item>
+  <ion-item color="success">
+    <ion-avatar aria-hidden="true" slot="start">
+      <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+    <ion-label>Louie</ion-label>
+  </ion-item>
+  <ion-item color="danger">
+    <ion-avatar aria-hidden="true" slot="start">
+      <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+    <ion-label>Fooie</ion-label>
+  </ion-item>
+</ion-list>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>EHola</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content color="light">
+  <ion-list [inset]="true">
+    <ion-item>
+      <ion-input label="First Name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Last Name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-toggle color="success">
+        <ion-label>Allow Notifications</ion-label>
+        <ion-note color="success">Unsubscribe at any time</ion-note>
+      </ion-toggle>
+    </ion-item>
+  </ion-list>
+
+  <ion-list [inset]="true">
+    <ion-item>
+      <ion-textarea label="Comments" labelPlacement="floating" rows="5"></ion-textarea>
+    </ion-item>
+  </ion-list>
+
+  <ion-note color="medium" class="ion-margin-horizontal">
+    Your comments will be kept anonymous and will only be used to improve the reliability of our products.</ion-note
+  >
+</ion-content>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Example</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content color="light">
+  <ion-list [inset]="true">
+    <ion-item>
+      <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
+      <ion-input aria-label="Task name" value="Get eggs"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
+      <ion-input aria-label="Task name" value="Get milk"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
+      <ion-input aria-label="Task name" value="Take out compost"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
+      <ion-input aria-label="Task name" value="Pick up dry cleaning"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
+      <ion-input aria-label="Task name" value="Call mom"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
+      <ion-input aria-label="Task name" value="Order more dog food"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
+      <ion-input aria-label="Task name" value="Think of new tasks for this demo"></ion-input>
+    </ion-item>
+  </ion-list>
+</ion-content>
+</ion-content>
