@@ -7,10 +7,10 @@
 <ion-content [fullscreen]="true">
   <form #juanito="ngForm" (ngSubmit)="login(juanito)">
     <ion-item>
-      <ion-input name="email" [(ngModel)]="email" label="Correo electrónico" labelPlacement="floating" placeholder="example.@gmail.com"></ion-input>
+      <ion-input name="email" [(ngModel)]="email" label="Correo electrónico" labelPlacement="floating" placeholder="example.@gmail.com" type="email" required></ion-input>
     </ion-item>
     <ion-item>
-      <ion-input name ="password" [(ngModel)]="password" label="Contraseña" labelPlacement="floating" type = "password" placeholder="Enter text"></ion-input>
+      <ion-input name ="password" [(ngModel)]="password" label="Contraseña" labelPlacement="floating" type = "password" placeholder="Enter text" required></ion-input>
     </ion-item>
     <ion-button type="submit" expand="block">Iniciar</ion-button>
   </form>
