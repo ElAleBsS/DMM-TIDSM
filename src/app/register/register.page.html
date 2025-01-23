@@ -1,23 +1,20 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" mode="ios">
   <ion-toolbar>
-    <ion-title>INCIO DE SESIÓN</ion-title>
+    <ion-title>Crear una cuenta </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <form #juanito="ngForm" (ngSubmit)="login(juanito)">
+  <form #registro="ngForm" (ngSubmit)="Registro(registro)">
     <ion-item>
       <ion-input name="email" [(ngModel)]="email" label="Correo electrónico" labelPlacement="floating" placeholder="example.@gmail.com" type="email" required></ion-input>
     </ion-item>
     <ion-item>
       <ion-input name ="password" [(ngModel)]="password" label="Contraseña" labelPlacement="floating" type = "password" placeholder="Enter text" required></ion-input>
     </ion-item>
-    <ion-button type="submit" expand="block">Iniciar</ion-button>
+    <ion-item>
+      <ion-input name ="passwordd" [(ngModel)]="passwordd" label="Confirmar contraseña" labelPlacement="floating" type = "password" placeholder="Enter text" required></ion-input>
+    </ion-item>
+    <ion-button type="submit" expand="block">Registrar</ion-button>
   </form>
-  <ion-text>
-    <p>
-      ¿No tienes una cuenta?
-      <a routerlink="/register">Registrate</a>  
-    </p>
-  </ion-text>
 </ion-content>

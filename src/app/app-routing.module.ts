@@ -55,6 +55,10 @@ const routes: Routes = [
     path: 'alert',
     loadChildren: () => import('./alert/alert.module').then( m => m.AlertPageModule)
   },
+  {
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+  },
 ];
 
 @NgModule({
